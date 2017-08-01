@@ -1,0 +1,54 @@
+/*for border radius*/
+.home{
+    position: relative;
+    height: 100vh;
+    background: $baseBg ;
+    z-index: -2;
+    overflow: hidden;
+}
+.wrapper{
+    height: 100vmin;
+    width: 100vmin;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    z-index: 1;
+    @include translate(0,-50%);
+}
+.round-01{
+    @include rounds($bg:$baseBg, $widthHeight:40, $left : 50, $top:30);
+}
+.round-011{
+    @include rounds($bg:$baseBg, $widthHeight:56, $left : 50, $top:22);
+    opacity: .5;
+}
+.round-02{
+    @include rounds($bg:$baseBg, $widthHeight:22, $left : 85, $top:5);
+}
+.round-03{
+    @include rounds($bg:$baseBg, $widthHeight:20, $left : 30, $top:70);
+}
+.round-04{
+    @include rounds($bg:$baseBg, $widthHeight:17, $left : 25, $top:10);
+}
+.round-05{
+    @include rounds($bg:$baseBg, $widthHeight:8.5, $left : 71.3, $top:64.9);
+}
+.round-06{
+    @include rounds($bg:$baseBg, $widthHeight:15, $left : 80, $top:78);
+}
+.round-07{
+    @include rounds($bg:$baseBg, $widthHeight:12, $left : 9, $top:40);
+}
+.round-08{
+    @include rounds($bg:$baseBg, $widthHeight:10.5, $left : 77.1, $top:54);
+}
+.round-09{
+    @include rounds($bg:$baseBg, $widthHeight:8.5, $left : 78.5, $top:44);
+}
+.round-10{
+    @include rounds($bg:$baseBg, $widthHeight:8.5, $left : 76, $top:34);
+}
+
+
+

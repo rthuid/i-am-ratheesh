@@ -1,0 +1,50 @@
+/*box-shadow*/
+
+@mixin rounds($bg:$baseBg, $widthHeight:40, $left: 50, $top:30) {
+    @include box-shadow();
+    @include rounded(50%);
+    @include gradient-horizontal(darken($bg, 7%), lighten($bg, 20%));
+    height: ($widthHeight) + vmin;
+    width: ($widthHeight) + vmin;
+    top: $top + vmin;
+    /*(100 - $widthHeight)/2+vh;*/
+    left: $left + vmin;
+    margin-left: - ($widthHeight/2) + vmin;
+    position: absolute;
+    border: ($widthHeight/8)+px solid #fff;
+    border-right: 0;
+    border-bottom: 0;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 200%;
+        z-index: -1;
+        @include gradient-horizontal(darken($bg, 50%), $bg, $angle: 90deg);
+        opacity: .1;
+        border-radius: 1000px 0 0 1000px;
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        transform-origin: 0% 50%;
+        -webkit-transform-origin: 25% 50%;
+        -moz-transform-origin: 25% 50%;
+        -o-transform-origin: 25% 50%;
+        -ms-transform-origin: 25% 50%;
+    }/*
+    &:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 2px;
+        height: 2px;
+        padding-left: -1px;
+        padding-top: -1px;
+        background: #000;
+    }*/
+}
