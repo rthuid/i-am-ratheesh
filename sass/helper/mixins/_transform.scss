@@ -6,6 +6,7 @@
     -webkit-transform: $transforms;
     transform: $transforms;
 }
+//translateX(2px) translateY(1px);
 // rotate
 @mixin rotate ($deg) {
     @include transform(rotate(#{$deg}deg));
@@ -30,13 +31,12 @@
     -webkit-transform-origin: $origin;
     transform-origin: $origin;
 }
-/*.test {
-  @include skew(25,10);
-  @include transform-origin(top left);
-  position: absolute;
-  top: 25%;
-  bottom: 25%;
-  left: 25%;
-  right: 25%;
-  background-color: rgba(20,20,20,.5);
-}*/
+
+.center-ver-hor{
+    @include translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-flex;
+
+}

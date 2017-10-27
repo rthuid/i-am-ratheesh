@@ -58,16 +58,19 @@
 ***************************************************************************************************************/
 /***************************************************************************************************************
 ***************************************************************************************************************/
-/*.test {
-  @include skew(25,10);
-  @include transform-origin(top left);
+/* line 35, ../sass/helper/mixins/_transform.scss */
+.center-ver-hor {
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   position: absolute;
-  top: 25%;
-  bottom: 25%;
-  left: 25%;
-  right: 25%;
-  background-color: rgba(20,20,20,.5);
-}*/
+  top: 50%;
+  left: 50%;
+  display: inline-flex;
+}
+
 /*
  * ease-in-out
  */
@@ -141,7 +144,6 @@ ol, ul {
   position: relative;
   height: 100vh;
   background: #e6e6e8;
-  z-index: -2;
   overflow: hidden;
 }
 
@@ -183,18 +185,18 @@ ol, ul {
   border: 5px solid #fff;
   border-right: 0;
   border-bottom: 0;
- /*
-&:after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 2px;
-    height: 2px;
-    padding-left: -1px;
-    padding-top: -1px;
-    background: #000;
-}*/
+  /*
+  &:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 2px;
+      height: 2px;
+      padding-left: -1px;
+      padding-top: -1px;
+      background: #000;
+  }*/
 }
 /* line 17, ../sass/helper/mixins/_rounds.scss */
 .round-01:before {
@@ -223,6 +225,12 @@ ol, ul {
   -o-transform-origin: 25% 50%;
   -ms-transform-origin: 25% 50%;
 }
+/* line 39, ../sass/helper/mixins/_rounds.scss */
+.round-01 i {
+  font-size: 13.3333333333vmin;
+  color: #b3b3b3;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.9);
+}
 
 /* line 21, ../sass/component/_rth.scss */
 .round-011 {
@@ -247,18 +255,18 @@ ol, ul {
   border: 7px solid #fff;
   border-right: 0;
   border-bottom: 0;
- /*
-&:after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 2px;
-    height: 2px;
-    padding-left: -1px;
-    padding-top: -1px;
-    background: #000;
-}*/
+  /*
+  &:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 2px;
+      height: 2px;
+      padding-left: -1px;
+      padding-top: -1px;
+      background: #000;
+  }*/
   opacity: .5;
 }
 /* line 17, ../sass/helper/mixins/_rounds.scss */
@@ -288,6 +296,12 @@ ol, ul {
   -o-transform-origin: 25% 50%;
   -ms-transform-origin: 25% 50%;
 }
+/* line 39, ../sass/helper/mixins/_rounds.scss */
+.round-011 i {
+  font-size: 18.6666666667vmin;
+  color: #b3b3b3;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.9);
+}
 
 /* line 25, ../sass/component/_rth.scss */
 .round-02 {
@@ -312,18 +326,18 @@ ol, ul {
   border: 2.75px solid #fff;
   border-right: 0;
   border-bottom: 0;
- /*
-&:after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 2px;
-    height: 2px;
-    padding-left: -1px;
-    padding-top: -1px;
-    background: #000;
-}*/
+  /*
+  &:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 2px;
+      height: 2px;
+      padding-left: -1px;
+      padding-top: -1px;
+      background: #000;
+  }*/
 }
 /* line 17, ../sass/helper/mixins/_rounds.scss */
 .round-02:before {
@@ -352,6 +366,12 @@ ol, ul {
   -o-transform-origin: 25% 50%;
   -ms-transform-origin: 25% 50%;
 }
+/* line 39, ../sass/helper/mixins/_rounds.scss */
+.round-02 i {
+  font-size: 7.3333333333vmin;
+  color: #b3b3b3;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.9);
+}
 
 /* line 28, ../sass/component/_rth.scss */
 .round-03 {
@@ -376,18 +396,18 @@ ol, ul {
   border: 2.5px solid #fff;
   border-right: 0;
   border-bottom: 0;
- /*
-&:after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 2px;
-    height: 2px;
-    padding-left: -1px;
-    padding-top: -1px;
-    background: #000;
-}*/
+  /*
+  &:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 2px;
+      height: 2px;
+      padding-left: -1px;
+      padding-top: -1px;
+      background: #000;
+  }*/
 }
 /* line 17, ../sass/helper/mixins/_rounds.scss */
 .round-03:before {
@@ -416,6 +436,12 @@ ol, ul {
   -o-transform-origin: 25% 50%;
   -ms-transform-origin: 25% 50%;
 }
+/* line 39, ../sass/helper/mixins/_rounds.scss */
+.round-03 i {
+  font-size: 6.6666666667vmin;
+  color: #b3b3b3;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.9);
+}
 
 /* line 31, ../sass/component/_rth.scss */
 .round-04 {
@@ -440,18 +466,18 @@ ol, ul {
   border: 2.125px solid #fff;
   border-right: 0;
   border-bottom: 0;
- /*
-&:after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 2px;
-    height: 2px;
-    padding-left: -1px;
-    padding-top: -1px;
-    background: #000;
-}*/
+  /*
+  &:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 2px;
+      height: 2px;
+      padding-left: -1px;
+      padding-top: -1px;
+      background: #000;
+  }*/
 }
 /* line 17, ../sass/helper/mixins/_rounds.scss */
 .round-04:before {
@@ -480,6 +506,12 @@ ol, ul {
   -o-transform-origin: 25% 50%;
   -ms-transform-origin: 25% 50%;
 }
+/* line 39, ../sass/helper/mixins/_rounds.scss */
+.round-04 i {
+  font-size: 5.6666666667vmin;
+  color: #b3b3b3;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.9);
+}
 
 /* line 34, ../sass/component/_rth.scss */
 .round-05 {
@@ -504,18 +536,18 @@ ol, ul {
   border: 1.0625px solid #fff;
   border-right: 0;
   border-bottom: 0;
- /*
-&:after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 2px;
-    height: 2px;
-    padding-left: -1px;
-    padding-top: -1px;
-    background: #000;
-}*/
+  /*
+  &:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 2px;
+      height: 2px;
+      padding-left: -1px;
+      padding-top: -1px;
+      background: #000;
+  }*/
 }
 /* line 17, ../sass/helper/mixins/_rounds.scss */
 .round-05:before {
@@ -544,6 +576,12 @@ ol, ul {
   -o-transform-origin: 25% 50%;
   -ms-transform-origin: 25% 50%;
 }
+/* line 39, ../sass/helper/mixins/_rounds.scss */
+.round-05 i {
+  font-size: 2.8333333333vmin;
+  color: #b3b3b3;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.9);
+}
 
 /* line 37, ../sass/component/_rth.scss */
 .round-06 {
@@ -568,18 +606,18 @@ ol, ul {
   border: 1.875px solid #fff;
   border-right: 0;
   border-bottom: 0;
- /*
-&:after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 2px;
-    height: 2px;
-    padding-left: -1px;
-    padding-top: -1px;
-    background: #000;
-}*/
+  /*
+  &:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 2px;
+      height: 2px;
+      padding-left: -1px;
+      padding-top: -1px;
+      background: #000;
+  }*/
 }
 /* line 17, ../sass/helper/mixins/_rounds.scss */
 .round-06:before {
@@ -608,6 +646,12 @@ ol, ul {
   -o-transform-origin: 25% 50%;
   -ms-transform-origin: 25% 50%;
 }
+/* line 39, ../sass/helper/mixins/_rounds.scss */
+.round-06 i {
+  font-size: 5vmin;
+  color: #b3b3b3;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.9);
+}
 
 /* line 40, ../sass/component/_rth.scss */
 .round-07 {
@@ -632,18 +676,18 @@ ol, ul {
   border: 1.5px solid #fff;
   border-right: 0;
   border-bottom: 0;
- /*
-&:after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 2px;
-    height: 2px;
-    padding-left: -1px;
-    padding-top: -1px;
-    background: #000;
-}*/
+  /*
+  &:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 2px;
+      height: 2px;
+      padding-left: -1px;
+      padding-top: -1px;
+      background: #000;
+  }*/
 }
 /* line 17, ../sass/helper/mixins/_rounds.scss */
 .round-07:before {
@@ -672,6 +716,12 @@ ol, ul {
   -o-transform-origin: 25% 50%;
   -ms-transform-origin: 25% 50%;
 }
+/* line 39, ../sass/helper/mixins/_rounds.scss */
+.round-07 i {
+  font-size: 4vmin;
+  color: #b3b3b3;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.9);
+}
 
 /* line 43, ../sass/component/_rth.scss */
 .round-08 {
@@ -696,18 +746,18 @@ ol, ul {
   border: 1.3125px solid #fff;
   border-right: 0;
   border-bottom: 0;
- /*
-&:after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 2px;
-    height: 2px;
-    padding-left: -1px;
-    padding-top: -1px;
-    background: #000;
-}*/
+  /*
+  &:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 2px;
+      height: 2px;
+      padding-left: -1px;
+      padding-top: -1px;
+      background: #000;
+  }*/
 }
 /* line 17, ../sass/helper/mixins/_rounds.scss */
 .round-08:before {
@@ -736,6 +786,12 @@ ol, ul {
   -o-transform-origin: 25% 50%;
   -ms-transform-origin: 25% 50%;
 }
+/* line 39, ../sass/helper/mixins/_rounds.scss */
+.round-08 i {
+  font-size: 3.5vmin;
+  color: #b3b3b3;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.9);
+}
 
 /* line 46, ../sass/component/_rth.scss */
 .round-09 {
@@ -760,18 +816,18 @@ ol, ul {
   border: 1.0625px solid #fff;
   border-right: 0;
   border-bottom: 0;
- /*
-&:after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 2px;
-    height: 2px;
-    padding-left: -1px;
-    padding-top: -1px;
-    background: #000;
-}*/
+  /*
+  &:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 2px;
+      height: 2px;
+      padding-left: -1px;
+      padding-top: -1px;
+      background: #000;
+  }*/
 }
 /* line 17, ../sass/helper/mixins/_rounds.scss */
 .round-09:before {
@@ -800,6 +856,12 @@ ol, ul {
   -o-transform-origin: 25% 50%;
   -ms-transform-origin: 25% 50%;
 }
+/* line 39, ../sass/helper/mixins/_rounds.scss */
+.round-09 i {
+  font-size: 2.8333333333vmin;
+  color: #b3b3b3;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.9);
+}
 
 /* line 49, ../sass/component/_rth.scss */
 .round-10 {
@@ -824,18 +886,18 @@ ol, ul {
   border: 1.0625px solid #fff;
   border-right: 0;
   border-bottom: 0;
- /*
-&:after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 2px;
-    height: 2px;
-    padding-left: -1px;
-    padding-top: -1px;
-    background: #000;
-}*/
+  /*
+  &:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 2px;
+      height: 2px;
+      padding-left: -1px;
+      padding-top: -1px;
+      background: #000;
+  }*/
 }
 /* line 17, ../sass/helper/mixins/_rounds.scss */
 .round-10:before {
@@ -863,4 +925,10 @@ ol, ul {
   -moz-transform-origin: 25% 50%;
   -o-transform-origin: 25% 50%;
   -ms-transform-origin: 25% 50%;
+}
+/* line 39, ../sass/helper/mixins/_rounds.scss */
+.round-10 i {
+  font-size: 2.8333333333vmin;
+  color: #b3b3b3;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.9);
 }

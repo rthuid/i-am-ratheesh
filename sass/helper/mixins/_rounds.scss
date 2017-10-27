@@ -35,7 +35,13 @@
         -moz-transform-origin: 25% 50%;
         -o-transform-origin: 25% 50%;
         -ms-transform-origin: 25% 50%;
-    }/*
+    }
+    i{
+        font-size: $widthHeight /3 + vmin;
+        color: $gray-light;
+        text-shadow: 1px 1px 0px rgba(255, 255, 255, .9);
+    }
+    /*
     &:after{
         content: '';
         position: absolute;
